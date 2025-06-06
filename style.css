@@ -1,0 +1,231 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+nav ul a {
+  margin: 0 10px;
+  color: #000;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+nav ul a:hover {
+  background-color: rgb(187, 0, 255);
+  color: #f4f4f4;
+}
+
+body {
+  background-image: url("./IMG/v748-toon-103.jpg");
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+#intro {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#apresentacao p:nth-child(1) {
+  font-size: 30px;
+}
+#apresentacao p:nth-child(2) {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#redesociais {
+  display: flex;
+  gap: 20px;
+}
+
+#redessociais img {
+  width: 45px;
+}
+#apresentacao p:nth-child(2) span {
+  color: rgb(187, 0, 255);
+}
+
+#intro button {
+  padding: 14px 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#intro button:hover {
+  color: rgb(187, 0, 255);
+}
+
+/* sobre mim */
+
+#sobremim {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+  border-top: 2px solid rgb(0, 0, 0);
+}
+
+#resumo {
+  margin-top: 5%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#meusconhecimentos {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#resumo h2,
+#meusconhecimentos h2 {
+  font-size: 50px;
+  color: rgb(187, 0, 255);
+}
+
+#resumo p,
+#meusconhecimentos ul li {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* inivio do contato */
+#contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  border-top: 2px solid #000;
+  text-align: center;
+}
+
+#contato h2 {
+  margin-top: 5%;
+  font-size: 50px;
+  color: rgb(187, 0, 255);
+}
+
+#contato p {
+    font-size: 26px;
+    font-weight: bold;
+}
+#contato form {
+  text-align: left;
+  font-weight: bold;
+}
+
+#contato form input,
+textarea {
+  height: 40px;
+  width: 400px;
+  max-width: 400px;
+  padding-inline: 5px;
+  border-radius: 4px;
+  border-color: rgb(187, 0, 255);
+}
+#contato form input:focus,
+textarea:focus {
+    outline: none;
+}
+
+#btnEnviar{
+     padding:10px ;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#btnEnviar:hover {
+    color: rgb(187, 0, 255);
+    
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  color: #000;
+}
+
+
+/* responsividade */
+@media screen  and (max-width: 950px){
+    header {
+        flex-direction: column;
+    }
+    /* inivio do main  */
+    #intro{
+        padding-inline: 20px;
+    }
+    #apresentacao p:nth-child(1){
+        font-size: 27px;
+    }
+
+    #apresentacao p:nth-child(2){
+        font-size: 37px;
+    }
+
+    #img-dev{
+        display: none;
+    }
+
+    #sobremim{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #resumo, #meusconhecimentos {
+        margin-top: 0;
+        padding-inline: 20px;
+    }
+    #resumo h2, #meusconhecimentos h2 {
+        font-size: 40px;
+    }
+    #resumo p, #meusconhecimentos ul li {
+        font-size: 15px;
+    }
+
+}

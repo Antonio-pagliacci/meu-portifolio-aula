@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portifólio</h1>
+      <nav>
+        <ul>
+          <a href="">
+            <li>Sobre mim</li>
+          </a>
+          <a href="">
+            <li>Contato</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="intro">
+        <div id="apresentacao">
+          <p>Olá, seja bem vindo ao meu portifólio!</p>
+          <p>
+            Meu nome é <span>Antonio Pagliacci</span> e sou desenvolvedor web
+            Fullstack
+          </p>
+        </div>
+        <div id="redessociais">
+          <a href="https://github.com/Antonio-pagliacci">
+            <img src="./IMG/icons8-github-50.png" alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/antonio-pagliacci-307a95228/">
+            <img src="./IMG/icons8-linkedin-50.png" alt="github" />
+          </a>
+        </div>
+        <a href="#sobremim">
+          <button>Conheça mais sobre mim</button>
+        </a>
+      </div>
+      <div id="img-dev">
+        <img
+          src="./IMG/grapy-software-developer-coding-with-two-monitors.png"
+          alt=""
+        />
+      </div>
+    </main>
+    <section id="sobremim">
+      <div id="resumo">
+        <h2>Sobre mim</h2>
+        <p>
+          Olá, eu sou Antonio Pagliacci! Sou desenvolvedor web em formação, com
+          foco em React e interesse especial em criar interfaces funcionais,
+          modernas e bem estruturadas. Atualmente, estou em transição de
+          carreira — venho da área de segurança pública, com sólida experiência
+          em tecnologia na Diretoria de Infraestrutura de TI da Polícia Militar
+          do Rio de Janeiro.
+        </p>
+        <p>
+          Tenho buscado unir minha bagagem técnica com novos conhecimentos em
+          desenvolvimento frontend para construir soluções que entreguem valor
+          real ao usuário. Já desenvolvi projetos práticos, como um clone do
+          Instagram, e estou criando o sistema "Equipe Eva Beault", uma
+          plataforma completa voltada para o mercado de maquiagem, integrando
+          e-commerce, cursos e cadastro de profissionais. Neste portfólio,
+          compartilho alguns dos meus projetos e aprendizados. Estou sempre
+          aberto a colaborações, novos desafios e oportunidades, onde pretendo
+          continuar minha jornada como desenvolvedor.
+        </p>
+      </div>
+      <div id="meusconhecimentos">
+        <h2>Meus conhecimentos</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contato">
+      <h2>Você pode me enviar uma mensagem!</h2>
+      <p>
+        Preencha o seu nome, seu e-mail e escreva a mensagem que deseja enviar
+        para mim. Logo quando eu puder, irei responder. <br /><br />
+        Desde já agradeo seu contato!
+      </p>
+
+      <form action="">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br />
+        <label for="email">E-mail:</label><br />
+        <input type="text" id="email" name="email" required /><br /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <br /><br />
+        <input id="btnEnviar" type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer>
+      <h5>&copy; 2025 - Todos os direitos reservados</h5>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
