@@ -30,5 +30,5 @@ Este portfólio é um reflexo do meu aprendizado contínuo e da minha paixão po
 
 ---
 
-## 📁 Estrutura de pastas
+
 
